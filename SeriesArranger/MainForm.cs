@@ -30,8 +30,7 @@ namespace SeriesArranger
         {
             if (Directory.Exists(directoryPath))
             {
-                string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-                string[] seriesNames = File.ReadAllLines(path + "\\seriesNames.txt");
+                string[] seriesNames = File.ReadAllLines("seriesNames.txt");
                 string[] fileEntries = Directory.GetFiles(directoryPath)
                                         .Select(file => Path.GetFileName(file)).ToArray();
                 string[] directories = Directory.GetDirectories(directoryPath)

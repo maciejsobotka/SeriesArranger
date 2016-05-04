@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.textBoxSource = new System.Windows.Forms.TextBox();
             this.buttonFolderSelect = new System.Windows.Forms.Button();
@@ -70,6 +71,7 @@
             this.Controls.Add(this.buttonArrange);
             this.Controls.Add(this.buttonFolderSelect);
             this.Controls.Add(this.textBoxSource);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "SeriesArranger";
             this.ResumeLayout(false);
